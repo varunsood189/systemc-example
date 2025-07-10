@@ -67,11 +67,11 @@ Every 10 nanoseconds:
                         |
             +-----------+-------------+
             |                         |
-  [2] Write val to 0x20       [3] Write 1 or 0 to 0x30
-  (Store in memory)           (Control actuator)
-            ↓                         ↓
-     +------+-----+            +------+------+
-     |            |            |             |
-     |  Memory    |            |  Actuator   |
-     | (val saved)|            | (state set) |
-     +------------+            +-------------+
+        [2] Write val to 0x20       [3] Write 1 or 0 to 0x30
+        (Store in memory)           (Control actuator)
+                  ↓                         ↓
+           +------+-----+            +------+------+
+           |            |            |             |
+           |  Memory    |            |  Actuator   |
+           | (val saved)|            | (state set) |
+           +------------+            +-------------+
